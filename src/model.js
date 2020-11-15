@@ -12,7 +12,7 @@ function fetchData() {
        const html = data.response.results
        .map(news => {
         return `
-           <div class "news">
+           <div class="news">
             <h3>Headline: ${news.webTitle}</h3>
             <p>Full Story: ${news.webUrl}</P>
            </div>
