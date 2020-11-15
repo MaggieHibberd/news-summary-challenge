@@ -15,9 +15,10 @@ function fetchData() {
            <div class="news">
            <p><img src="${news.webUrl}" alt=${news.webTitle}" /></p>
             <h3>Headline: ${news.webTitle}</h3>
-            <p>Full Story: ${news.webUrl}</P>
+            <P><a href=${news.webUrl} target="${news.webUrl}">Full Story:</a></P>
            </div>
            `
+
        })
        .join('');
        console.log(html);
@@ -26,6 +27,5 @@ function fetchData() {
         console.log(error)
     });
 }
-
 
 fetchData();
