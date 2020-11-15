@@ -13,6 +13,7 @@ function fetchData() {
        .map(news => {
         return `
            <div class="news">
+           <p><img src="${news.webUrl}" alt=${news.webTitle}" /></p>
             <h3>Headline: ${news.webTitle}</h3>
             <p>Full Story: ${news.webUrl}</P>
            </div>
